@@ -15,7 +15,7 @@ Test_labels = fix_targets(Test_labels, 10)
 Test_images = np.array([i.flatten() for i in Test_images])
 # Train_images = np.array([i.flatten() for i in Train_images])
 
-parameters = nn_model(Test_images, Test_labels, 10, num_iterations=60, print_cost=True,alpha=0.01,graph=True, Max_last_best=4000)
+parameters = nn_model(Test_images, Test_labels, 30, print_cost=True,alpha=0.01,graph=True, Max_last_best=4000)
 # model_test(parameters, Test_images, Test_labels)
 
 model_test(parameters, Test_images, Test_labels)
